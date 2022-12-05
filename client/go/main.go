@@ -11,7 +11,7 @@ import (
 
 var exchangeCode = flag.String("exchange_code", "", "exchange code (eg. 'cbse' for Coinbase or 'bnce' for Binance)")
 var exchangePairCode = flag.String("exchange_pair_code", "", "exchange pair code (eg. 'BTC-USD' for Coinbase or 'BTCUSDT' for Binance)")
-var serverAddress = flag.String("server_address", "", "address for the kaiko server (eg. 127.0.0.1:8080)")
+var serverAddress = flag.String("server_address", "127.0.0.1:8080", "address for the kaiko server (eg. 127.0.0.1:8080)")
 
 func main() {
 	flag.Parse()
