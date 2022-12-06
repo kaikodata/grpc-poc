@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package kaiko;
+option go_package = "./kaiko";
 
 service Kaiko {
   rpc Exists(ExistsRequest) returns (ExistsResponse) {}
