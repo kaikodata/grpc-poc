@@ -50,7 +50,7 @@ func StoreData(datas *Instruments) {
 }
 
 /*
-The function GetData() retrieve and parse data available from a fix endpoint
+The function GetData() retrieve and parse data available from a defined endpoint
 */
 func GetData() {
 	var datas Instruments
@@ -70,8 +70,8 @@ func GetData() {
 }
 
 /*
-The function DataExist is the response rule - check if the combination ExchangeCode/ExchangePairCode exists
-and return an ExistsCode accordingly.
+The function DataExist is the response rule - the function checks if the combination ExchangeCode/ExchangePairCode exists
+and return a code accordingly.
 */
 func DataExist(exchangeCode *string, exchangePairCode *string) int {
 	values, key_exist := instruments[*exchangeCode]
